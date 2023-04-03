@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.188" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="Hola como estas" name="Deposer avec succes - Example #1.1" time="0.037">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 10 dans mon compte.........passed
+When je remplis le champ avec un 100........................................passed
+And je clique sur Deposer...................................................passed
+Then je devrais voir un message de resultat effectue avec succes le solde 110.passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Deposer avec succes - Example #1.2" time="0.001">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 0 dans mon compte..........passed
+When je remplis le champ avec un 2000.......................................passed
+And je clique sur Deposer...................................................passed
+Then je devrais voir un message de resultat effectue avec succes le solde 2000.passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Retirer avec succes - Example #1.1" time="0.002">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 100 dans mon compte........passed
+When je remplis le champ avec un 10.........................................passed
+And je clique sur retirer...................................................passed
+Then je devrais voir un message de resultat effectue avec succes le solde 90.passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Retirer avec succes - Example #1.2" time="0.004">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 2000 dans mon compte.......passed
+When je remplis le champ avec un 1000.......................................passed
+And je clique sur retirer...................................................passed
+Then je devrais voir un message de resultat effectue avec succes le solde 1000.passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Solde negatif apres retrait alert - Example #1.1" time="0.003">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 200 dans mon compte........passed
+When je remplis le champ avec un 300........................................passed
+Then je devrais avoir une exception de solde négatif........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Solde negatif apres retrait alert - Example #1.2" time="0.001">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 1 dans mon compte..........passed
+When je remplis le champ avec un 2..........................................passed
+Then je devrais avoir une exception de solde négatif........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Le solde est correcte - Example #1.1" time="0">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 100 dans mon compte........passed
+Then le solde doit etre correcte 100........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hola como estas" name="Le solde est correcte - Example #1.2" time="0.001">
+<system-out><![CDATA[
+Given je suis sur la page de transaction avec un 0 dans mon compte..........passed
+Then le solde doit etre correcte 0..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
